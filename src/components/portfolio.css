@@ -1021,9 +1021,12 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: -25px;
+    margin-left: 95px;
 }
 
 button {
   margin: 10px;
   font-size: xx-small;
 }
+
+
