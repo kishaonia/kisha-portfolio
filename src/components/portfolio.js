@@ -76,6 +76,7 @@ function Portfolio() {
         <div className='wrapper text'>
           About me
         </div>
+        </section>
         <div className='about-me-stuff'>
           <div className="body-about-me">
             <div className="options-about-me">
@@ -109,15 +110,10 @@ function Portfolio() {
                             <br></br>
                             <br></br>Always found home wherever life takes her.
                           </span>,
-
-
                           <span className='ab2'>
                             <p className='ab2-title'>Non-technical</p>
                             English & Tagalog
-
                             <br></br>
-
-
                             <p className='ab2-title'>Programming</p>
                             <ul className='ab2-title-lang'>
                               <li className='lang-ab'>React.js</li>
@@ -133,9 +129,6 @@ function Portfolio() {
                               <li className='lang-ab'>Python</li>
                             </ul>
                           </span>,
-
-
-
 
                           <span className='ab3'>
                             <ul className='ab3-hobbies'>
@@ -206,7 +199,7 @@ function Portfolio() {
           </div>
 
         </div>
-      </section>
+    
       <div className='project-title-ab'>From surfing the waves in the Philippines to riding the tides of technology, my journey has taken me from Manila to here.</div>
 
       <div className='project-description-ab'>I embraced my immigrant roots and my curiosity by solo traveling at a young age. I learned to surf by the ocean, and Moana's words rang true when I saw the line where the sky meets the sea, calling me to explore new places. I've always wondered about what it's like to live in a different place. I moved to the US when I was 18. I learned to adapt to a new environment and live with different customs. I picked up a few sentences of a new language because It’s fascinating how people can communicate differently and still say the same thing. I lived in Miami and Las Vegas, which are like live music central. I love attending concerts and meeting people, which led me here. As I venture into the tech industry, I realized that there was an invisible string tying me to where I am now all along. I will continue to move to places where my career can thrive, and I will most likely have to adapt to a new culture. I will continue to grow with an open mind and learn new languages, this time coding languages. I will continue to listen to the art of others through words, whether it be my favorite singers or developers speaking about their new products. Lining up for merch? I'm still lining up years later, but for free swag. It's different, but it's also the same.</div>
@@ -216,55 +209,16 @@ function Portfolio() {
           Projects
         </div>
       </section>
-
-
-
       <section className='demo-gallery'>
         <div className='project-title'>Kim & Kristine's RSVP</div>
         <div className='links-git-repo'>
-        <div>
-      <button href="https://www.kimkristine.com/" target="_blank" >Live Link</button>
-      <style jsx>{`
-        button {
-          padding: 20px 40px;
-          background: none;
-          border: none;
-          position: relative;
-          text-transform: uppercase;
-          font-weight: bold;
-          letter-spacing: 3px;
-          cursor: pointer;
-        }
+          <div>
+            <button href="https://www.kimkristine.com/" target="_blank" >Live Link</button>
 
-        button::after,
-        button::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0;
-          border: 2px solid #000;
-          transition: transform .2s;
-        }
-
-        button::after {
-          transform: translate(3px, 3px);
-        }
-
-        button::before {
-          transform: translate(-3px, -3px);
-        }
-
-        button:hover::after,
-        button:hover::before {
-          transform: translate(0);
-        }
-      `}</style>
-    </div>
-    </div>
+          </div>
+        </div>
         <div className='project-description'>As a final output of what I have been preparing for, the official website of my sister and my brother in law. Used API to RSVP using that will be redirected to the designated email to receive. Will also implement QR scanning for users to upload during the reception. And guests can view their photos in this website even after the event.</div>
-       
+
         <ul className='wrapper'>
           <li>
             <img src={wedding3} width='1240' height='874' />
@@ -301,87 +255,15 @@ function Portfolio() {
         <div className='project-title'>Spork!</div>
         <div className='links-git-repo'>
 
-        <div>
-      <button href="https://spork-group-project.onrender.com/" target="_blank">Live Link</button>
-      <style jsx>{`
-        button {
-          padding: 20px 40px;
-          background: none;
-          border: none;
-          position: relative;
-          text-transform: uppercase;
-          font-weight: bold;
-          letter-spacing: 3px;
-          cursor: pointer;
-        }
+          <div>
+            <button href="https://spork-group-project.onrender.com/" target="_blank">Live Link</button>
 
-        button::after,
-        button::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0;
-          border: 2px solid #000;
-          transition: transform .2s;
-        }
+          </div>
+          <div>
+            <button href="https://github.com/Miketuazon/Spork" target="_blank">Repository</button>
 
-        button::after {
-          transform: translate(3px, 3px);
-        }
-
-        button::before {
-          transform: translate(-3px, -3px);
-        }
-
-        button:hover::after,
-        button:hover::before {
-          transform: translate(0);
-        }
-      `}</style>
-    </div>
-    <div>
-      <button href="https://github.com/Miketuazon/Spork"target="_blank">Repository</button>
-      <style jsx>{`
-        button {
-          padding: 20px 40px;
-          background: none;
-          border: none;
-          position: relative;
-          text-transform: uppercase;
-          font-weight: bold;
-          letter-spacing: 3px;
-          cursor: pointer;
-        }
-
-        button::after,
-        button::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0;
-          border: 2px solid #000;
-          transition: transform .2s;
-        }
-
-        button::after {
-          transform: translate(3px, 3px);
-        }
-
-        button::before {
-          transform: translate(-3px, -3px);
-        }
-
-        button:hover::after,
-        button:hover::before {
-          transform: translate(0);
-        }
-      `}</style>
-    </div>
-    </div>
+          </div>
+        </div>
         <div className='project-description'>Inspired by Tumblr, my team developed Spork, a user-friendly social blogging clone. We used, Node, React, Flask, SQL & PostgreSQL for this project. This platform provides users with a creative outlet to share their thoughts and express themselves through personalized posts. Users can enjoy features like post creation, customization options, social interactions, and media uploads. Spork fosters a vibrant and engaging community, allowing users to connect and interact with each other's content in a seamless and intuitive manner</div>
         <ul className='wrapper'>
           <li>
@@ -401,87 +283,15 @@ function Portfolio() {
       <section className='demo-gallery'>
         <div className='project-title'>Capstone</div>
         <div className='links-git-repo'>
-        <div>
-      <button href="https://kk-em38.onrender.com" target="_blank">Live Link</button>
-      <style jsx>{`
-        button {
-          padding: 20px 40px;
-          background: none;
-          border: none;
-          position: relative;
-          text-transform: uppercase;
-          font-weight: bold;
-          letter-spacing: 3px;
-          cursor: pointer;
-        }
+          <div>
+            <button href="https://kk-em38.onrender.com" target="_blank">Live Link</button>
 
-        button::after,
-        button::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0;
-          border: 2px solid #000;
-          transition: transform .2s;
-        }
+          </div>
+          <div>
+            <button href="https://github.com/kishaonia/WeddingCapstone" target="_blank">Repository</button>
 
-        button::after {
-          transform: translate(3px, 3px);
-        }
-
-        button::before {
-          transform: translate(-3px, -3px);
-        }
-
-        button:hover::after,
-        button:hover::before {
-          transform: translate(0);
-        }
-      `}</style>
-    </div>
-    <div>
-      <button href="https://github.com/kishaonia/WeddingCapstone" target="_blank">Repository</button>
-      <style jsx>{`
-        button {
-          padding: 20px 40px;
-          background: none;
-          border: none;
-          position: relative;
-          text-transform: uppercase;
-          font-weight: bold;
-          letter-spacing: 3px;
-          cursor: pointer;
-        }
-
-        button::after,
-        button::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0;
-          border: 2px solid #000;
-          transition: transform .2s;
-        }
-
-        button::after {
-          transform: translate(3px, 3px);
-        }
-
-        button::before {
-          transform: translate(-3px, -3px);
-        }
-
-        button:hover::after,
-        button:hover::before {
-          transform: translate(0);
-        }
-      `}</style>
-    </div>
-    </div>
+          </div>
+        </div>
         <div className='project-description'>For this project, I developed a sophisticated website clone dedicated to wedding planning. I used the technologies, React, Node.js, and SQL. The platform offers comprehensive functionality for managing various aspects of weddings. Users can create and manage guestlists, registries, and comments. Additionally, they can make song requests and upload photos to capture memorable moments. Robust user registration, login, and profile update features ensure a personalized experience for every user.</div>
 
         <ul className='wrapper'>
@@ -500,39 +310,27 @@ function Portfolio() {
       <div className='links-end'>
         <section className='demo-text-links'>
           <div className='wrapper text'>
-            Connect with me
+           CONNECT WITH ME
           </div>
-
-
+          </section>
           <ul className="demo-text-links-12345">
-  <a className="wrapper-text1" href="https://www.linkedin.com/in/kisha-onia-63bb35182/" target="_blank">
-  <div className='links-social'> <i class="fa fa-linkedin-square"></i>
-  <p className='rah-social'>LinkedIn</p>
-   </div>
-
-
- 
-
-    </a>
-    <a className="wrapper-text2" href="https://github.com/kishaonia" target="_blank">
-    <div className='links-social'> <i class="fa fa-github"></i>
-    <p className='rah-social'>
-  Github</p></div>
-
-   
-    </a>
-    <a className="wrapper-text3" href="mailto:workwithkisha@gmail.com" target="_blank">
-    <div className='links-social'> <i class="fa fa-envelope"></i>
-    <p className='rah-social'>Email</p>
-  </div>
-
-   
-    </a>
-
-</ul>
-
-
-        </section>
+            <a className="wrapper-text1" href="https://www.linkedin.com/in/kisha-onia-63bb35182/" target="_blank">
+              <div className='links-social'> <i class="fa fa-linkedin-square"></i>
+                <p className='rah-social'>LinkedIn</p>
+              </div>
+            </a>
+            <a className="wrapper-text2" href="https://github.com/kishaonia" target="_blank">
+              <div className='links-social'> <i class="fa fa-github"></i>
+                <p className='rah-social'>
+                  Github</p></div>
+            </a>
+            <a className="wrapper-text3" href="mailto:workwithkisha@gmail.com" target="_blank">
+              <div className='links-social'> <i class="fa fa-envelope"></i>
+                <p className='rah-social'>Email</p>
+              </div>
+            </a>
+          </ul>
+      
       </div>
     </div>
 

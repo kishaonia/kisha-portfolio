@@ -64,6 +64,7 @@
     align-content: center;
     justify-content: center;
     background-color: #e6e5e0;
+    text-align: center;
   }
 
   .container-landing{
@@ -109,51 +110,48 @@ background-color: none;
         
         }
 
-     
 
-
-/* Media Queries */
-
-/* Small devices (phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .landing-wrapper {
-    font-size: 2rem;
-  }
-
-  .container-landing {
-    margin: 20px;
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .landing-wrapper {
+@media (max-width: 1024px) {
+  .display-3 {
     font-size: 2.5rem;
   }
-
-  .container-landing {
-    margin: 25px;
+  .container-landing, .container-landing-hidden {
+    padding: 0 20px;
   }
 }
 
-/* Large devices (desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .landing-wrapper {
-    font-size: 3rem;
+/* Styles for mobile phones */
+@media (max-width: 768px) {
+  .display-3 {
+    font-size: 2rem;
   }
-
-  .container-landing {
-    margin: 30px;
+  .container-landing, .container-landing-hidden {
+    padding: 0 15px;
   }
+  .discover-link {
+    font-size: 0.9rem;
+  }
+  .display-3.fw-bold.text-center {
+    display: flex;
+    background-color: #90877c;
+    padding-top: 0;
+    font-weight: 600;
+    font-size: large;
+    line-height: 2;
+}
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .landing-wrapper {
-    font-size: 4rem;
+/* Styles for very small screens */
+@media (max-width: 480px) {
+  .display-3 {
+    font-size: 1.5rem;
   }
+  .container-landing, .container-landing-hidden {
+    padding: 0 10px;
+  }
+  .discover-link {
+    font-size: 0.8rem;
+  }
+  
 
-  .container-landing {
-    margin: 40px;
-  }
 }
