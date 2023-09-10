@@ -1,0 +1,112 @@
+/* * {
+    background-color: #e6e5e0;
+  } */
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: white;
+  }
+  
+  .bg {
+    background-color: var(--bg);
+  }
+  
+  .title-welcome{
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .content-landing p {
+    background: #90877c;
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+  }
+  
+  .hidden-content {
+    --x: 0px;
+    --y: 0px;
+    --size: 5px;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;    
+    display: flex;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+   background-color:#90877c;
+    --mask: radial-gradient(
+      circle at var(--x) var(--y),
+      black var(--size),
+      transparent 0
+    );
+    -webkit-mask-image: var(--mask);
+    mask-image: var(--mask);
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .landing-wrapper{
+    font-size: 3rem;
+    /* background-color: black; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #e6e5e0;
+  }
+
+  .container-landing{
+    margin: 30px;
+  }
+
+  .discover-link:hover{
+    color: rgb(107, 107, 107);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+background-color: none;
+  }
+
+  .discover-link{
+    color: #aba192;
+    font-size: x-large;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+
+  .text-center{
+    padding-top: 10rem;
+    }
+
+    .display-3.fw-bold.text-center{
+      display: flex;
+      background-color: #90877c;
+      padding-top: 0;
+    }
+
+    .container-landing-hidden{
+      position: absolute;
+      bottom: 45%;
+      color: #dad3c7;
+      line-height: 3;
+      text-align: center;
+        }
+
+        .hidden-hover{
+          font-size: large;
+        
+        }
+
+     
