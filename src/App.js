@@ -37,8 +37,8 @@ function App() {
 
   return (
     <div className="App">
-      {currentPath === '/' && <Landing />}
-      {currentPath === '/1' && <Portfolio />}
+      {/* {currentPath === '/' && <Landing />} */}
+      {currentPath === '/' && <Portfolio />}
     </div>
   );
 }
